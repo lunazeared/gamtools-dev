@@ -58,7 +58,7 @@ def regions_are_valid(regions):
 
     allowed_values = set([0, 1])
     region_unique_values = [
-        set(np.unique(np.array(region).ravel())) for region in regions]
+        set(np.unique(np.array(region).ravel())) for region in regions
     invalid_regions = [not region_values.issubset(
         allowed_values) for region_values in region_unique_values]
 
